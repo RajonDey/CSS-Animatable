@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Background Animation</title>
+
+	<style type="text/css">
+		#myDiv{
+			width: 100px;
+			height: 100px;
+			border: 2px solid #dddddd;
+			-webkit-animation: mymoves 5s infinite; /* Safari 4.0 - 8.0 */
+			animation: mymoves 5s infinite;
+			position: absolute;
+			top: 0px;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes mymoves {
+		  50% {top: 550px;}
+		}
+
+		@keyframes mymoves {
+		  50% {top: 550px;}
+		}
+	</style>
+
+</head>
+<body>
+
+	<div id="myDiv"></div>
+
+</body>
+</html>

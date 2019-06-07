@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#main {
+		  display: flex;
+		  margin: 0 auto;
+		  text-align: center;
+		  justify-content: center;
+		}
+
+		#main div {
+		  width: 80px;
+		  height: 80px;
+		}
+
+		#FirstDIV{
+			-webkit-animation: mymove 5s infinite;
+			animation: mymove 5s infinite;
+		}
+
+		@-webkit-keyframes mymove{
+			50% {order: 5}
+		}
+		@keyframes mymove{
+			50% {order: 5}
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+	  <div style="background-color:red; order:1;" id="FirstDIV"></div>
+	  <div style="background-color:#111111; order:2;"></div>
+	  <div style="background-color:#555555; order:3;"></div>
+	  <div style="background-color:#999999; order:4;"></div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV img{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-animation: mymove 5s infinite;
+  animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  50% { -webkit-filter: grayscale(100%); }
+}
+
+@keyframes mymove {
+  50% {filter: grayscale(100%);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="myDIV">
+  <img src="http://rdcircles.com/img/RajonDey.jpg" alt="Pineapple" width="300" height="300">
+</div>
+
+
+</body>
+</html>
